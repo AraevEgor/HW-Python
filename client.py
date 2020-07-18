@@ -35,7 +35,6 @@ if __name__ == '__main__':
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect(('localhost', 9999))
         dc = DataCollector('cpu_usage')
-        dc.start()
         dc.start_collect()
         counter = 0
         while True:
