@@ -44,6 +44,6 @@ if __name__ == '__main__':
                 if counter == 6:    # stop collecting the data after 5 iterations
                     dc.stop_collect()
                     dc.cleanup()
-            sleep(10)
+            sleep(60)
         except:
             break
